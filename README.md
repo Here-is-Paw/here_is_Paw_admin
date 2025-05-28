@@ -9,8 +9,8 @@
 ### 메인 화면
 - MSA로 분리되어있는 각 기능이 잘 돌아가고있는지 확인 가능
 <p align="center">
-  <img width="45%" alt="스크린샷 2025-05-28 오후 5 41 25" src="https://github.com/user-attachments/assets/db694926-65e2-43bb-b1d7-e993402f232d" />
-  <img width="45%" alt="스크린샷 2025-05-28 오후 5 41 36" src="https://github.com/user-attachments/assets/48fa19e5-53f7-4cde-9364-b043e16a5e65" />
+  <img width="45%" alt="스크린샷 2025-05-28 오후 6 00 28" src="https://github.com/user-attachments/assets/4165a10e-2f04-4eae-8c6e-518ce0fca8b0" />
+  <img width="45%" alt="스크린샷 2025-05-28 오후 6 00 58" src="https://github.com/user-attachments/assets/3aad12d1-876a-4a1c-8070-0992b14c0cf1" />
 </p>
 
 ### 상세 화면
