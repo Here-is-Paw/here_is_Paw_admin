@@ -1,0 +1,55 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: AdminServer
+  # Spring Security ??
+  security:
+    user:
+      name: admin
+      password: admin123
+  # Admin Server ??? ???? ???? ?? (????)
+  boot:
+    admin:
+      client:
+        url: http://localhost:8081  # ?? ??? ????
+        instance:
+          prefer-ip: true
+          service-url: http://localhost:8081
+        username: admin  # Security ????
+        password: admin123
+
+# Actuator ?? (Admin Server ?? ?????)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 8081
+
+# Admin Server UI ??
+spring.boot.admin.ui:
+  title: "My Application Monitor"  # ???? ??
+  brand: "<img src='assets/img/icon-spring-boot-admin.svg'><span>My Admin</span>"  # ??? ??
+
+# ?? ??
+logging:
+  level:
+    root: INFO
+    de.codecentric.boot.admin: DEBUG  # Admin ?? ??
+    org.springframework.security: INFO
+    org.springframework.web: INFO
+
+# Admin Server Security ?? (Client ??)
+spring.boot.admin.server:
+  context-path: /admin  # Admin UI ?? ?? (????)
+  # Notification ?? (????)
+  notify:
+    mail:
+      enabled: false  # ?? ?? ????
+    # ?? ?? ???? ?? ??
